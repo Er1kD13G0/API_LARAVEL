@@ -30,6 +30,35 @@ Para usar a API, siga estas etapas:
     Inicie o servidor localmente executando o comando `php artisan serve`.
 
 5. **Teste a API**:
-    Use uma ferramenta de cliente HTTP como `Thunder, Postman ou Insomnia` para testar a API. Cole o link do servidor local no seu cliente e faça requisições HTTP como POST, GET, UPDATE e DELETE conforme necessário.
+    Use uma ferramenta de cliente HTTP como Thunder, Postman ou Insomnia para testar a API. Cole o link do servidor local no seu cliente e faça requisições HTTP como POST, GET, UPDATE e DELETE conforme necessário.
 
-Com esses passos, você estará pronto para usar a API Laravel. Se encontrar algum problema ou precisar de mais assistência, não hesite em entrar em contato.
+6. **Endpoints**
+    Os endpoints para usar no seu código são os seguintes: 
+    - **Usuários:**
+        - POST: http://127.0.0.1:8000/api/usuarios
+        - GET: http://127.0.0.1:8000/api/usuarios
+        - UPDATE: http://127.0.0.1:8000/api/usuarios/(id_usu)
+        - DELETE: http://127.0.0.1:8000/api/usuarios/(id_usu)
+    - **Itens:**
+        - POST: http://127.0.0.1:8000/api/itens
+        - GET: http://127.0.0.1:8000/api/itens
+        - UPDATE: http://127.0.0.1:8000/api/itens/(id)
+        - DELETE: http://127.0.0.1:8000/api/itens/(id)
+
+7. **Corpo das Requisições**
+   Os corpos das requisições em formato JSON são os seguintes:
+   - Para a tabela de usuários:
+    ```json
+    {
+        "nome_usu" : "usuario",
+        "email" : "usuario@gmail.com",
+        "senha" : "senha"
+    }
+    ```
+   - Para a tabela de itens:
+    ```json
+    {
+        "dados" : "(Conteúdo dos dados da agenda)"
+    }
+    ```
+
