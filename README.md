@@ -30,6 +30,6 @@ Para usar a API, siga estas etapas:
     Inicie o servidor localmente executando o comando `php artisan serve`.
 
 5. **Teste a API**:
-    Use uma ferramenta de cliente HTTP como Thunder, Postman ou Insomnia para testar a API. Cole o link do servidor local no seu cliente e faça requisições HTTP como POST, GET, UPDATE e DELETE conforme necessário.
+    Use uma ferramenta de cliente HTTP como `Thunder, Postman ou Insomnia` para testar a API. Cole o link do servidor local no seu cliente e faça requisições HTTP como POST, GET, UPDATE e DELETE conforme necessário.
 
 Com esses passos, você estará pronto para usar a API Laravel. Se encontrar algum problema ou precisar de mais assistência, não hesite em entrar em contato.
