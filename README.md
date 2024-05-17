@@ -53,6 +53,7 @@ Para usar a API, siga estas etapas:
         "nome_usu" : "usuario",
         "email" : "usuario@gmail.com",
         "senha" : "senha"
+        "imagem" : "link da imagem"
     }
     ```
    - Para a tabela de itens:
