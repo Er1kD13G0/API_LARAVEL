@@ -17,7 +17,8 @@ class UsuariosController extends Controller
         $validated = $request->validate([
             'nome_usu' => 'required|string|max:20',
             'email' => 'required|email|max:50',
-            'senha' => 'required|string|max:12'
+            'senha' => 'required|string|max:12',
+            'imagem' => 'nullable|string|max:255'
         ]);
 
         $usuario = Usuarios::create($validated);
@@ -30,7 +31,8 @@ class UsuariosController extends Controller
         $validated = $request->validate([
             'nome_usu' => 'required|string|max:20',
             'email' => 'required|email|max:50',
-            'senha' => 'required|string|max:12'
+            'senha' => 'required|string|max:12',
+            'imagem' => 'nullable|string|max:255'
         ]);
 
         $usuario = Usuarios::find($id_usu);

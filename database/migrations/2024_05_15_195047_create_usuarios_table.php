@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('nome_usu', 20);
             $table->string('email', 50)->unique();
             $table->string('senha', 12);
+            $table->string('imagem', 255);
             $table->timestamps();
         });
     }
